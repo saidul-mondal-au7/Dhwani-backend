@@ -62,6 +62,9 @@ ii. Logout
 
 - POST: Local Server - http://localhost:3000/districts
 - POST: Production Server - https://dhawni-backend.herokuapp.com/districts
+- Body - raw
+- JSON
+
 ```JSON
 "state":"Delhi",
 "district":"Budh bazar"
@@ -79,6 +82,8 @@ ii. Logout
 
 - POST : Local Server - http://localhost:3000/childs
 - POST : Production Server - https://dhawni-backend.herokuapp.com/childs
+- Body - raw
+- JSON
 
 ```JSON
     "name":"Sam Mondal",
