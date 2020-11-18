@@ -2,7 +2,7 @@ const express = require('express')
 const District = require('../models/district')
 const router = new express.Router()
 
-router.post('/districts',async(req,res)=>{
+router.post('/districts', async(req,res)=>{
     const district = new District(req.body)
 
     try{

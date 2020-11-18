@@ -4,7 +4,7 @@ const sharp = require('sharp')
 const Child = require('../models/child')
 const router = new express.Router()
 
-router.post('/childs',async(req,res)=>{
+router.post('/childs', async(req,res)=>{
     const child = new Child(req.body)
 
     try{
@@ -40,7 +40,7 @@ const upload = multer({
 })
 
 
-router.post('/childs/avatar',upload.single('avatar'),async(req,res)=>{
+router.post('/childs/avatar', upload.single('avatar'), async(req,res)=>{
     const buffer = await sharp(req.file.buffer).resize({width:250,height:250}).png().toBuffer()
 
     req.child.avatar = buffer
@@ -52,7 +52,7 @@ router.post('/childs/avatar',upload.single('avatar'),async(req,res)=>{
 
 router.get('/childs/avatar',async(req,res)=>{
     try{
-        const child = await child.findById(req.params.id)
+        const child = await Child.findById(req.params.id)
         if(!child || !child.avatar){
             throw new Error()
         }
@@ -66,3 +66,11 @@ router.get('/childs/avatar',async(req,res)=>{
 
 
 module.exports = router;
+
+// "name":"Sam Mondal",
+// "sex":"male",
+// "birthday":"12/03/2012",
+// "fatherName":"Ratan Mondal",
+// "motherName":"Beta Mondal",
+// "state":"West Bengal",
+// "district":"Darjeeling"

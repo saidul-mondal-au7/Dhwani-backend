@@ -2,7 +2,7 @@ const express = require('express')
 const State = require('../models/state')
 const router = new express.Router()
 
-router.post('/states',async(req,res)=>{
+router.post('/states', async(req,res)=>{
     const state = new State(req.body)
 
     try{
