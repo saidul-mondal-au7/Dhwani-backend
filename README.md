@@ -50,12 +50,12 @@ ii. Logout
 ```JSON
 "state":"Delhi"
 ```
-![](/demoPictures/Screenshot2.png)
+![](/demoPictures/Screenshot3.png)
 
 - GET: Local Server - http://localhost:3000/states
 - GET: Production Server - https://dhawni-backend.herokuapp.com/states
 
-![](/demoPictures/Screenshot3.png)
+![](/demoPictures/Screenshot4.png)
 
 
 4) Districts
@@ -71,12 +71,12 @@ ii. Logout
 
 ```
 
-![](/demoPictures/Screenshot4.png)
+![](/demoPictures/Screenshot5.png)
 
 - GET: Local Server - http://localhost:3000/districts
 - GET: Production Server - https://dhawni-backend.herokuapp.com/districts
 
-![](/demoPictures/Screenshot5.png)
+![](/demoPictures/Screenshot6.png)
 
 5) Childs
 
@@ -94,10 +94,10 @@ ii. Logout
     "state":"West Bengal",
     "district":"Darjeeling"
 ```
-![](/demoPictures/Screenshot6.png)
+![](/demoPictures/Screenshot7.png)
 
 - GET : Local Server - http://localhost:3000/childs
 - GET : Production Server - https://dhawni-backend.herokuapp.com/childs
 
-![](/demoPictures/Screenshot7.png)
+![](/demoPictures/Screenshot8.png)
 
